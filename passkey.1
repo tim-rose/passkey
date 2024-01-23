@@ -1,0 +1,105 @@
+.\"
+.\" PASSKEY.1 --Manual page for "passkey"
+.\"
+.TH PASSKEY 1 "DATE" "VERSION" "PACKAGE"
+.SH NAME
+passkey \- suggest some words for use as a passphrase
+.SH SYNOPSIS
+.\" ...brief examples of usage
+.SY passkey
+.OP --n_words n
+.OP --dictionary file
+.SH DESCRIPTION
+This command chooses a selection of words from a file and
+prints them to
+.IR stdout .
+The output is useful as a suggestion for account passwords, because a sequence
+of recognisable words is easier to remember for humans, and much harder to
+guess for computers.
+.SH OPTIONS
+.TP
+.BI \-n\  n-words
+.TQ
+.BI \-\-n-words\fR= n-words
+Print the specified number of words.
+The default number is 4.
+.TP
+.BI \-d\ file
+.TQ
+.BI \-\-dictionary\fR= file
+Choose words from 
+The default
+.I argument
+is "/usr/local/share/text/words-3000.txt".
+.PD
+.SS "Logging Options"
+The
+.B passkey
+command specifies its internal logging level in a
+.BR syslog (3)
+compatible way.  The default logging level is "notice".
+The following options set the logging to a specific level:
+.PD 0
+.TP 18
+.BR \-q ,\  \-\-quiet
+Set the logging level to "warning".
+.TP
+.BR \-v ,\  \-\-verbose
+Set the logging level to "info".
+.TP
+.BR \-_ ,\  \-\-debug
+Set the logging level to "debug".
+.TP
+.BI \-\-log-level\fR= level
+Set the logging level to the specified syslog level.
+.PD
+.SH USAGE
+Describe "user guide" style explanations of how passkey may be used.
+.SH ENVIRONMENT
+Describe the environment variables and installed files of passkey.
+.PD 0
+.TP 18
+PASSKEYPATH
+A colon-separated list of directories to search for passkey config files.
+.TP
+LOG_LEVEL
+The default logging level, if defined.
+.PD
+.SH EXAMPLES
+Consider some typical (and unusual!) use scenarios. Describe each one,
+and provide a code example using the ".EX" macros.
+.SS "Typical Usage"
+Describe a typical use scenario.
+.EX
+\f(CB$ passkey --verbose file.txt\fR
+info: passkey: something happened to "file.txt"
+.EE
+.SS "Unusual Usage"
+Describe an unusual use scenario for passkey.
+.EX
+while passkey --special; do
+    echo "passkey: did something special"
+done
+.EE
+.SH "EXIT STATUS"
+The
+.B passkey
+command
+exits with the following status:
+.PD 0
+.TP 4
+0
+Successfully processed all passkeys.
+.TP
+1
+Unable to process all passkeys.
+.TP
+2
+There was an error in the command line arguments.
+.SH BUGS
+Describe unusual behaviour, or limitations.
+.SH AUTHOR
+passkey was written by AUTHOR.
+.SH SEE ALSO
+.BR kill (1),
+.BR touch (1)
