@@ -1,4 +1,4 @@
-# Passover: A Really Great Idea
+# Passkey: Generate a Strong Password
 
 This program prints a selection of random words selected from a text file.
 By default it will select words from the Unix word list file.
@@ -9,25 +9,11 @@ words](https://www.ef-australia.com.au/english-resources/english-vocabulary/top-
 
 ## Getting Started
 
-> Describe a simple scenario and how to apply it to (or solve it by)
-> passkey, with some code example(s).
-
 ```bash
 $ make build test install
 $ passkey 
 coucal generative belladonna
 ```
-
-> Maybe document some more as a mini-tutorial.
-
-## Further Reading
-
-> Provide links to other material in this repo, or external.
->
-> * User Guide
-> * Tutorial
-> * Developer Guide
-> * Reference Manual.
 
 ## Requirements
 
