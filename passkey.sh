@@ -13,7 +13,7 @@
 require "log"
 require "getopt"
 
-VERSION=
+app_version=VERSION
 
 dictionary=             # set by getopts
 n_words=                # set by getopts
@@ -36,7 +36,7 @@ main()
 	exit 0
     fi
     if [ "$version" ]; then
-	printf '%s version %s\n' "${0##*/}" "$VERSION"
+	printf '%s version %s\n' "${0##*/}" "$app_version"
 	exit 0
     fi
     
