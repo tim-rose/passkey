@@ -53,34 +53,13 @@ Set the logging level to "debug".
 .BI \-\-log-level\fR= level
 Set the logging level to the specified syslog level.
 .PD
-.SH USAGE
-Describe "user guide" style explanations of how passkey may be used.
 .SH ENVIRONMENT
 Describe the environment variables and installed files of passkey.
 .PD 0
 .TP 18
-PASSKEYPATH
-A colon-separated list of directories to search for passkey config files.
-.TP
 LOG_LEVEL
 The default logging level, if defined.
 .PD
-.SH EXAMPLES
-Consider some typical (and unusual!) use scenarios. Describe each one,
-and provide a code example using the ".EX" macros.
-.SS "Typical Usage"
-Describe a typical use scenario.
-.EX
-\f(CB$ passkey --verbose file.txt\fR
-info: passkey: something happened to "file.txt"
-.EE
-.SS "Unusual Usage"
-Describe an unusual use scenario for passkey.
-.EX
-while passkey --special; do
-    echo "passkey: did something special"
-done
-.EE
 .SH "EXIT STATUS"
 The
 .B passkey
@@ -96,10 +75,8 @@ Unable to process all passkeys.
 .TP
 2
 There was an error in the command line arguments.
-.SH BUGS
-Describe unusual behaviour, or limitations.
 .SH AUTHOR
-passkey was written by AUTHOR.
+passkey was written by Tim Rose.
 .SH SEE ALSO
 .BR kill (1),
 .BR touch (1)
